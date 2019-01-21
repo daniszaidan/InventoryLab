@@ -7,9 +7,9 @@
 <a href="#">MySQL</a>
 </p>
 
-> Tentang InventoryLab
+## Tentang InventoryLab
 
-Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoenix, MySQL Driver. Aplikasi ini dibuat oleh team PBO ASYIQUE dari Telkom University untuk tugas besar mata kuliah Pemrograman Berbasis Objek. beberapa fitur dan halaman yang ada di aplikasi ini diantaranya : 
+> Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoenix, MySQL Driver. Aplikasi ini dibuat oleh team PBO ASYIQUE dari Telkom University untuk tugas besar mata kuliah Pemrograman Berbasis Objek. beberapa fitur dan halaman yang ada di aplikasi ini diantaranya : 
 
 - Halaman Beranda : Berisi Activity Feed dan Jumlah data dari masing-masing halaman yang ada, menampilkan user yang sedang login, dan tombol logout.
 - Halaman Inventaris : Berisi data inventaris dari laboratorium tersebut, fitur tambah data, edit data, dan hapus data
@@ -18,8 +18,7 @@ Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoeni
 
 Disemua halaman, setelah selesai menambah / mengedit / menghapus data akan merefresh otomatis data yang ditampilkan di dalam tabel
 
-
-<br><br><br><br><br/><br/>
+<br><br>
 
 > User Interface InventoryLab
 
