@@ -19,7 +19,7 @@ Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoeni
 Disemua halaman, setelah selesai menambah / mengedit / menghapus data akan merefresh otomatis data yang ditampilkan di dalam tabel
 
 
-
+<br><br><br><br><br/><br/>
 
 > User Interface InventoryLab
 
