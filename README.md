@@ -7,7 +7,7 @@
 <a href="#">MySQL</a>
 </p>
 
-<br><br>
+<br>
 
 ## Tentang InventoryLab
 
