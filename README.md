@@ -7,7 +7,7 @@
 <a href="#">MySQL</a>
 </p>
 
-## Tentang InventoryLab
+> Tentang InventoryLab
 
 Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoenix, MySQL Driver. Aplikasi ini dibuat oleh team PBO ASYIQUE dari Telkom University untuk tugas besar mata kuliah Pemrograman Berbasis Objek. beberapa fitur dan halaman yang ada di aplikasi ini diantaranya : 
 
@@ -18,7 +18,7 @@ Aplikasi inventaris laboratorium berbasis Java dengan menggunakan JavaFX, JFoeni
 
 Disemua halaman, setelah selesai menambah / mengedit / menghapus data akan merefresh otomatis data yang ditampilkan di dalam tabel
 
-## User Interface InventoryLab
+> User Interface InventoryLab
 
 Untuk tampilan UI-nya, di aplikasi ini kami menggunakan [JFoenix](https://github.com/jfoenixadmin/JFoenix). Berikut adalah User Interface yang ada didalam aplikasi ini : 
 
@@ -28,12 +28,12 @@ Untuk tampilan UI-nya, di aplikasi ini kami menggunakan [JFoenix](https://github
 <p align="center"><img width="70%" height="auto" src="http://3.bp.blogspot.com/-w-91PNSWBh0/XESlgFJE82I/AAAAAAAALH4/HorY6pU3a_ERMaJQyEZjaK1GrTbdJBGwACK4BGAYYCw/s1600/Screenshot%2B%2528442%2529.png"></p>
 
 
-## Cara Menggunakan
+> Cara Menggunakan
 
 Untuk menggunakan aplikasi ini, silahkan import inventory.sql pada phpmyadmin kalin, kemudian download project ini dan buka di Netbeans, kemudian RUN. Kemungkinana akan ada error jika anda belum menambahkan library JFoenix pada project ini di Netbeans anda, silahkan tambahan JFoenix yang ada di directory : InventoryLab\dist\lib
 Pilihan download lainnya via Google Drive : https://goo.gl/UAHn8A
 
-## InventoryLab Team
+> InventoryLab Team
 
 Aplikasi ini dibuat oleh team PBO Asyique yang diketua oleh Danis Zaidan. Berikut daftar anggota tim kami : 
 
