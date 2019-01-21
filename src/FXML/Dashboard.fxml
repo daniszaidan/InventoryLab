@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<!--
+   Inventory Lab - By Danis Zaidan
+   Aplikasi ini untuk bahan pembelajaran dan tidak boleh diperjual belikan / diakui oleh orang lain / kelompok lain
+   Portfolio   : http://daniszaidan.me/
+   Github      : https://github.com/daniszaidan
+   LinkedIn    : https://www.linkedin.com/in/daniszaidan/
+   Instagram   : https://www.instagram.com/daniszaidan/
+   © 2018
+ -->
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="sidebar" layoutY="55.0" prefHeight="596.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="56.0">
+         <effect>
+            <DropShadow color="#00000024" height="0.0" radius="5.75" width="25.0" />
+         </effect>
+         <children>
+            <JFXButton fx:id="beranda_button" layoutY="14.0" onAction="#beranda_page" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="Beranda" textFill="#767676" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="inventaris_button" layoutY="56.0" onAction="#inventaris_page" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="Inventaris" textFill="#767676">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="peminjaman_button" layoutY="112.0" onAction="#peminjaman_page" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="Peminjaman" textFill="#767676">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="aslab_button" layoutY="168.0" onAction="#aslab_page" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" text="Daftar Aslab" textFill="#767676">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="header" prefHeight="56.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow color="#00000024" height="25.0" radius="5.75" width="0.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="152.0" layoutX="51.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="logout_button" layoutX="1030.0" layoutY="2.0" onMouseClicked="#logoutAction" prefHeight="56.0" prefWidth="56.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logout.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane layoutX="988.0" layoutY="-1.0" prefHeight="56.0" prefWidth="285.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <Label fx:id="nama" alignment="CENTER_RIGHT" layoutX="74.0" layoutY="19.0" prefHeight="17.0" prefWidth="211.0" text="Welcome back, fulan" textAlignment="RIGHT" textFill="#767676">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="blankPage" layoutX="269.0" layoutY="72.0" prefHeight="560.0" prefWidth="812.0" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="22.0" />
+   </children>
+</AnchorPane>

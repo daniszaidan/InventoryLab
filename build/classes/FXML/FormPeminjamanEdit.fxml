@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="735.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormPeminjamanEditController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="522.0" layoutY="38.0" text="Peminjaman Barang" textFill="#4d4d4d">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nama_peminjam" labelFloat="true" layoutX="51.0" layoutY="109.0" prefHeight="25.0" prefWidth="300.0" promptText="Nama Peminjaman" AnchorPane.topAnchor="109.0">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nim_peminjam" labelFloat="true" layoutX="52.0" layoutY="162.0" prefHeight="25.0" prefWidth="300.0" promptText="NIM Peminjam">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="no_telp" labelFloat="true" layoutX="50.0" layoutY="217.0" prefHeight="25.0" prefWidth="300.0" promptText="Nomor Telepon">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="tanggal_kembali" layoutX="384.0" layoutY="216.0" prefHeight="28.0" prefWidth="300.0" promptText="Tanggal Kembali" />
+            <JFXComboBox fx:id="id_barang" layoutX="384.0" layoutY="109.0" prefHeight="25.0" prefWidth="230.0" promptText="Barang" />
+            <JFXTextArea fx:id="keterangan_pinjam" layoutX="384.0" layoutY="274.0" prefHeight="81.0" prefWidth="300.0" promptText="Keterangan Pinjam" />
+            <JFXButton fx:id="editButton" layoutX="571.0" layoutY="403.0" onAction="#editAction" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: #4285F4;" text="EDIT" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="loading" fitHeight="11.0" fitWidth="88.0" layoutX="581.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/loading.gif" />
+               </image>
+            </ImageView>
+            <JFXTextArea fx:id="alamat" layoutX="52.0" layoutY="274.0" prefHeight="81.0" prefWidth="300.0" promptText="Alamat">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextField fx:id="jumlah" labelFloat="true" layoutX="627.0" layoutY="109.0" prefHeight="25.0" prefWidth="57.0" promptText="Jumlah">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <Pane layoutX="52.0" layoutY="25.0" prefHeight="49.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="nama_aslab" layoutY="15.0" text="Aslab : Nama Aslab" textFill="#4285f4">
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXDatePicker fx:id="tanggal_pinjam" layoutX="384.0" layoutY="161.0" prefHeight="28.0" prefWidth="300.0" promptText="Tanggal Pinjam" />
+            <JFXToggleButton fx:id="status_pengembalian" layoutX="52.0" layoutY="392.0" text="Sudah dikembalikan" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

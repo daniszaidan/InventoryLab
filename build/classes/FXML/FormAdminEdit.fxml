@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="430.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormAdminEditController">
+   <children>
+      <AnchorPane prefHeight="399.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="152.0" layoutY="29.0" text="Edit Data Admin" textFill="#4d4d4d">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" labelFloat="true" layoutX="52.0" layoutY="89.0" prefHeight="25.0" prefWidth="328.0" promptText="Username" AnchorPane.topAnchor="89.0">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="52.0" layoutY="142.0" prefHeight="25.0" prefWidth="328.0" promptText="Password" AnchorPane.topAnchor="142.0">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="nama" labelFloat="true" layoutX="54.0" layoutY="196.0" prefHeight="25.0" prefWidth="328.0" promptText="Nama">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nim" labelFloat="true" layoutX="52.0" layoutY="251.0" prefHeight="25.0" prefWidth="328.0" promptText="NIM">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="editButton" layoutX="160.0" layoutY="322.0" onAction="#editAction" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: #4285F4;" text="EDIT" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="loading" fitHeight="11.0" fitWidth="88.0" layoutX="172.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

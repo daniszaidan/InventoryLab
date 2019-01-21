@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="735.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormInventarisInsertController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="299.0" layoutY="30.0" text="Insert Data Inventaris" textFill="#4d4d4d">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="kode_barang" labelFloat="true" layoutX="51.0" layoutY="109.0" prefHeight="25.0" prefWidth="300.0" promptText="Kode Barang" AnchorPane.topAnchor="109.0">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nama_barang" labelFloat="true" layoutX="52.0" layoutY="162.0" prefHeight="25.0" prefWidth="300.0" promptText="Nama Barang">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="merk" labelFloat="true" layoutX="50.0" layoutY="217.0" prefHeight="25.0" prefWidth="300.0" promptText="Merk">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="tanggal_masuk" layoutX="50.0" layoutY="270.0" prefHeight="28.0" prefWidth="300.0" promptText="Tanggal Masuk" />
+            <JFXTextField fx:id="harga_barang" labelFloat="true" layoutX="384.0" layoutY="109.0" prefHeight="25.0" prefWidth="300.0" promptText="Harga">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="kondisi" layoutX="384.0" layoutY="162.0" prefHeight="25.0" prefWidth="300.0" promptText="Kondisi" />
+            <JFXTextArea fx:id="keterangan" layoutX="384.0" layoutY="217.0" prefHeight="81.0" prefWidth="300.0" promptText="Keterangan" />
+            <JFXButton fx:id="insertButton" layoutX="312.0" layoutY="355.0" onAction="#insertAction" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: #4285F4;" text="INSERT" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="loading" fitHeight="11.0" fitWidth="88.0" layoutX="322.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<!--
+   Inventory Lab - By Danis Zaidan
+   Aplikasi ini untuk bahan pembelajaran dan tidak boleh diperjual belikan / diakui oleh orang lain / kelompok lain
+   Portfolio   : http://daniszaidan.me/
+   Github      : https://github.com/daniszaidan
+   LinkedIn    : https://www.linkedin.com/in/daniszaidan/
+   Instagram   : https://www.instagram.com/daniszaidan/
+   © 2018
+ -->
+
+<AnchorPane id="AnchorPane" fx:id="homePage" prefHeight="560.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InventarisPageController">
+   <children>
+      <Pane fx:id="titlePage" layoutX="24.0" layoutY="24.0" prefHeight="52.0" prefWidth="275.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutY="8.0" text="Daftar Inventaris Labolatorium" textFill="#767676">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="insertButton" layoutX="664.0" layoutY="24.0" onAction="#insertDataInventaris" prefHeight="41.0" prefWidth="144.0" style="-fx-background-radius: 100; -fx-background-color: #4285f4; -fx-cursor: hand;" text="Tambah Data" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="71.0" layoutY="85.0" prefHeight="491.0" prefWidth="802.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <TableView fx:id="tableInventaris" layoutX="8.0" layoutY="8.0" prefHeight="476.0" prefWidth="786.0" stylesheets="@../image/table.css">
+               <columns>
+                  <TableColumn fx:id="col_no" prefWidth="59.0" text="No" />
+                  <TableColumn fx:id="col_id_barang" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="id" />
+                  <TableColumn fx:id="col_kode_barang" prefWidth="139.0" text="Kode Barang" />
+                  <TableColumn fx:id="col_nama_barang" minWidth="0.0" prefWidth="154.0" text="Nama Barang" />
+                  <TableColumn fx:id="col_merk" prefWidth="225.0" text="Merk" />
+                  <TableColumn fx:id="col_kondisi" minWidth="0.0" prefWidth="180.0" text="Kondisi" />
+                  <TableColumn fx:id="col_tanggal_masuk" minWidth="0.0" prefWidth="180.0" text="Tanggal Masuk" />
+                  <TableColumn fx:id="col_harga_barang" minWidth="0.0" prefWidth="180.0" text="Harga Barang" />
+                  <TableColumn fx:id="col_keterangan" minWidth="0.0" prefWidth="180.0" text="Keterangan" />
+               </columns>
+               <contextMenu>
+                  <ContextMenu fx:id="actionMenu">
+                     <items>
+                        <MenuItem fx:id="refreshData" mnemonicParsing="false" onAction="#refreshDataInventaris" text="Refresh" />
+                        <MenuItem fx:id="editData" mnemonicParsing="false" onAction="#editDataInventaris" text="Edit" />
+                        <MenuItem fx:id="deleteData" mnemonicParsing="false" onAction="#hapusDataInventaris" text="Delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--
+   Inventory Lab - By Danis Zaidan
+   Aplikasi ini untuk bahan pembelajaran dan tidak boleh diperjual belikan / diakui oleh orang lain / kelompok lain
+   Portfolio   : http://daniszaidan.me/
+   Github      : https://github.com/daniszaidan
+   LinkedIn    : https://www.linkedin.com/in/daniszaidan/
+   Instagram   : https://www.instagram.com/daniszaidan/
+   © 2018
+ -->
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="430.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormAdminInsertController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="143.0" layoutY="29.0" text="Insert Data Admin" textFill="#4d4d4d">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" labelFloat="true" layoutX="50.0" layoutY="99.0" prefHeight="25.0" prefWidth="328.0" promptText="Username" AnchorPane.topAnchor="99.0">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="52.0" layoutY="159.0" prefHeight="25.0" prefWidth="328.0" promptText="Password">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="nama" labelFloat="true" layoutX="52.0" layoutY="206.0" prefHeight="25.0" prefWidth="328.0" promptText="Nama">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nim" labelFloat="true" layoutX="50.0" layoutY="261.0" prefHeight="25.0" prefWidth="328.0" promptText="NIM">
+               <font>
+                  <Font name="Roboto" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="insertButton" layoutX="160.0" layoutY="330.0" onAction="#insertAction" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: #4285F4;" text="INSERT" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="loading" fitHeight="11.0" fitWidth="88.0" layoutX="170.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

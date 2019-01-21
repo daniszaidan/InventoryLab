@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<!-- 
+   Inventory Lab - By Danis Zaidan
+   Aplikasi ini untuk bahan pembelajaran dan tidak boleh diperjual belikan / diakui oleh orang lain / kelompok lain
+   Portfolio   : http://daniszaidan.me/
+   Github      : https://github.com/daniszaidan
+   LinkedIn    : https://www.linkedin.com/in/daniszaidan/
+   Instagram   : https://www.instagram.com/daniszaidan/
+   © 2018
+ -->
+
+<AnchorPane id="AnchorPane" fx:id="homePage" prefHeight="560.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PeminjamanPageController">
+   <children>
+      <Pane prefHeight="491.0" prefWidth="802.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <TableView fx:id="tablePeminjaman" layoutX="8.0" layoutY="8.0" prefHeight="476.0" prefWidth="786.0" stylesheets="@../image/table.css">
+               <columns>
+                  <TableColumn fx:id="col_no" prefWidth="59.0" text="No" />
+                  <TableColumn fx:id="col_id_peminjaman" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="ID Peminjaman" />
+                  <TableColumn fx:id="col_id_user" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="ID User" />
+                  <TableColumn fx:id="col_aslab" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="Aslab" />
+                  <TableColumn fx:id="col_id_barang" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="ID Barang" />
+                  <TableColumn fx:id="col_nama" minWidth="0.0" prefWidth="139.0" text="Nama" />
+                  <TableColumn fx:id="col_nim" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="NIM" />
+                  <TableColumn fx:id="col_no_telp" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="No Telp" />
+                  <TableColumn fx:id="col_alamat" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="Alamat" />
+                  <TableColumn fx:id="col_barang" minWidth="0.0" prefWidth="154.0" text="Barang" />
+                  <TableColumn fx:id="col_jumlah" prefWidth="88.0" text="Jumlah" />
+                  <TableColumn fx:id="col_tanggal_pinjam" minWidth="0.0" prefWidth="142.0" text="Tanggal Pinjam" />
+                  <TableColumn fx:id="col_tanggal_kembali" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="Tanggal Kembali" />
+                  <TableColumn fx:id="col_status_pengembalian" prefWidth="203.0" text="Status Pengembalian" />
+                  <TableColumn fx:id="col_keterangan_pinjam" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="Keterangan Pinjam" />
+               </columns>
+               <contextMenu>
+                  <ContextMenu fx:id="actionMenu">
+                     <items>
+                        <MenuItem fx:id="refreshData" mnemonicParsing="false" onAction="#refreshDataPeminjaman" text="Refresh" />
+                        <MenuItem fx:id="editData" mnemonicParsing="false" onAction="#editDataPeminjaman" text="Edit" />
+                        <MenuItem fx:id="deleteData" mnemonicParsing="false" onAction="#hapusDataPeminjaman" text="Delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="insertButton" onAction="#insertDataPeminjaman" prefHeight="41.0" prefWidth="144.0" style="-fx-background-radius: 100; -fx-background-color: #4285f4; -fx-cursor: hand;" text="Tambah Data" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="titlePage" prefHeight="52.0" prefWidth="275.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutY="8.0" text="Peminjaman Aset Laboratorium" textFill="#767676">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
